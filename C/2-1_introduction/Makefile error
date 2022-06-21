@@ -1,0 +1,30 @@
+CC = gcc
+CFLAGS = -Wall -O2
+SRCS = $(wildcard *.c)
+OBJS = $(SRCS:.c=.o)
+
+TARGET = main
+
+all : $(TARGET)
+
+# %.o : $(SRCS)
+# 	$(CC) $(CFLAGS) -c $< -o $@
+	
+# $(TARGET) : $(OBJS)
+# 	$(CC) $(CFLAGS) $^ -o $(TARGET)
+
+%.o : $(SRCS)
+	$(CC) $(CFLAGS) -c $< -o $@
+	
+$(TARGET) : $(OBJS)
+	$(CC) $(CFLAGS) $^ -o $(TARGET)
+
+.PHONY: test clean
+
+clean:
+	@echo Delete $(OBJS) $(TARGET)
+	rm -f $(OBJS) $(TARGET)
+
+test:
+	@echo SRCS : $(SRCS)
+	@echo OBJS : $(OBJS)
