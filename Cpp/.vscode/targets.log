@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Jul 20 21:01:25 2022
+# Make data base, printed on Thu Jul 21 20:54:17 2022
 
 # Variables
 
@@ -45,7 +47,7 @@ VTE_VERSION = 6003
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 8:52731
+JOURNAL_STREAM = 8:54605
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile
@@ -69,7 +71,7 @@ _ = /usr/bin/code
 # environment
 ROS_PACKAGE_PATH = /home/khj/scout_ws/src:/home/khj/catkin_ws/src:/opt/ros/noetic/share
 # environment
-MANAGERPID = 1669
+MANAGERPID = 1645
 # environment
 TURTLEBOT3_MODEL = waffle
 # environment
@@ -89,7 +91,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/KHJ-Laptop:@/tmp/.ICE-unix/2296,unix/KHJ-Laptop:/tmp/.ICE-unix/2296
+SESSION_MANAGER = local/KHJ-Laptop:@/tmp/.ICE-unix/2270,unix/KHJ-Laptop:/tmp/.ICE-unix/2270
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -99,7 +101,7 @@ XDG_MENU_PREFIX = gnome-
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 0a295bb261dc4e46aab3634b974f8c32
+INVOCATION_ID = 830400d76bd84d16b3b2b3a40a08bc28
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -111,7 +113,7 @@ ROS_DISTRO = noetic
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 14120
+GIO_LAUNCHED_DESKTOP_FILE_PID = 23259
 # automatic
 %F = $(notdir $%)
 # environment
@@ -121,7 +123,7 @@ PWD = /home/khj/modooCode/Cpp
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 2236
+SSH_AGENT_PID = 2210
 # environment
 PKG_CONFIG_PATH = /home/khj/scout_ws/devel/lib/pkgconfig:/home/khj/catkin_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig
 # environment
@@ -187,7 +189,7 @@ LC_TELEPHONE = en_US.UTF-8
 # default
 MAKE_COMMAND := make
 # environment
-OLDPWD = /home/khj/modooCode/Cpp/6-1_inheritance_overriding
+OLDPWD = /home/khj
 # environment
 TERMINATOR_DBUS_PATH = /net/tenshu/Terminator2
 # default
@@ -253,9 +255,9 @@ TERM = xterm-256color
 # environment
 TERMINATOR_DBUS_NAME = net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873
 # environment
-VSCODE_PID = 14257
+VSCODE_PID = 23365
 # environment
-TERMINATOR_UUID = urn:uuid:4d5c81fb-e985-4e34-9e00-70f2cb34db25
+TERMINATOR_UUID = urn:uuid:f4b292e0-eb8d-436e-9b3b-20dda1ba83ef
 # variable set hash-table stats:
 # Load=123/1024=12%, Rehash=0, Collisions=20/145=14%
 
@@ -265,9 +267,9 @@ TERMINATOR_UUID = urn:uuid:4d5c81fb-e985-4e34-9e00-70f2cb34db25
 
 # Directories
 
-# . (device 66309, inode 3282583): 15 files, no impossibilities.
+# . (device 66309, inode 3282583): 17 files, no impossibilities.
 
-# 15 files, no impossibilities in 1 directories.
+# 17 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -277,9 +279,6 @@ TERMINATOR_UUID = urn:uuid:4d5c81fb-e985-4e34-9e00-70f2cb34db25
 
 # Not a target:
 all:
- 
-make: *** No rule to make target 'all'.  Stop.
-
 #  Command line target.
 #  Implicit rule search has been done.
 #  File does not exist.
@@ -296,6 +295,7 @@ Makefile:
 makefile:
 #  Implicit rule search has been done.
 #  File does not exist.
+ 
 #  File has been updated.
 #  Failed to be updated.
 
@@ -320,12 +320,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 23 / storage = 342 B / avg = 14 B
-# current buf: size = 8162 B / used = 342 B / count = 23 / avg = 14 B
+# strcache buffers: 1 (0) / strings = 25 / storage = 388 B / avg = 15 B
+# current buf: size = 8162 B / used = 388 B / count = 25 / avg = 15 B
 
-# strcache performance: lookups = 26 / hit rate = 11%
+# strcache performance: lookups = 28 / hit rate = 10%
 # hash-table stats:
-# Load=23/8192=0%, Rehash=0, Collisions=1/26=4%
-# Finished Make data base on Wed Jul 20 21:01:25 2022
+# Load=25/8192=0%, Rehash=0, Collisions=1/28=4%
+# Finished Make data base on Thu Jul 21 20:54:17 2022
 
  
